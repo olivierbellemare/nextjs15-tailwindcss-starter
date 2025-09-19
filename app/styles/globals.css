@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --green-cta:        #1A5319;
+  --green-dark:       #092008;
+  --green-light:      #DDEDDE;
+  --green-medium:     #BAD8B6;
+  --green-flashs:     #37B235;
+  --orange-flash:     #FAA13C;
+  --brun:             #7A4E1D;
+  --grey-src:         #505050;
+
+  --cloudy:           #F3F3F3;
+  --rainy:            #DFDFDF;
+  --rainstorm:  		  #CCCCCC;
+  --stormy:           #999999;
+  --tornado:         	#666666;
+  --hurricane:			  #434343;
+  --twilight:         #333333;
+  --dirtyWhite:       #f1f1f1;
+  --White70:          rgba(255,255,255,0.7);
+  --grayLite:         #e1e1e1;
+  --graySoft:         #aaa9a9;
+  --grayDark:         #363636;
+  --blackGray:        #2b2b2b;
+
+  /* linear-gradient */
+  --gradient-top:     #84A178;
+  --gradient-middle:  #BAD8B6;
+  --gradient-bottom:  #DCE35B;
+
+  /* Google fonts */
+  --lato: 'Lato', sans-serif;
+  --EB-Garamond: 'EB Garamond', serif;
+}
+
+@theme inline {
+  --color-green-cta:        var(--green-cta);
+  --color-green-dark:       var(--green-dark);
+  --color-green-light:      var(--green-light);
+  --color-green-medium:     var(--green-medium);
+  --color-green-flashs:     var(--green-flashs);
+  --color-orange-flash:     var(--orange-flash);
+  --color-brun:             var(--brun);
+  --color-grey-src:         var(--grey-src);
+
+  --color-cloudy:           var(--cloudy);
+  --color-rainy:            var(--rainy);
+  --color-rainstorm:  		  var(--rainstorm);
+  --color-stormy:           var(--stormy);
+  --color-tornado:         	var(--tornado);
+  --color-hurricane:			  var(--hurricane);
+  --color-twilight:         var(--twilight);
+  --color-dirtyWhite:       var(--dirtyWhite);
+  --color-White70:          var(--White70);
+  --color-grayLite:         var(--grayLite);
+  --color-graySoft:         var(--graySoft);
+  --color-grayDark:         var(--grayDark);
+  --color-blackGray:        var(--blackGray);
+
+  /* linear-gradient */
+  --color-gradient-top:     var(--gradient-top);
+  --color-gradient-middle:  var(--gradient-middle);
+  --color-gradient-bottom:  var(--gradient-bottom);
+  
+  /* Google fonts */
+  --font-lato:              var(--lato);
+  --font-EB-Garamond:       var(--EB-Garamond);
+  
+}
+
+@utility lato {
+  @apply font-lato font-[400] not-italic;
+}
+
+@utility eb-garamond {
+  @apply font-EB-Garamond font-[700] not-italic;
+  font-optical-sizing: auto;  
+}
+
+a img { border: 0; }
+img { display: block; }
+
+html {  
+    @apply w-full h-full;
+}
+
+body {
+  @apply lato text-green-dark w-full h-full;
+}
+
+@layer base {
+  p {
+    @apply text-green-dark;
+  }
+
+  a {
+    color: var(--color-green-cta);
+  }
+
+  h1 {
+    @apply eb-garamond  text-8xl leading-none text-green-cta;
+  }
+  h2 {
+    @apply eb-garamond text-5xl leading-none text-green-cta;
+  }
+  h3 {
+    @apply eb-garamond text-4xl leading-none text-green-cta;
+  }
+}
