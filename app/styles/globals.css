@@ -3,6 +3,9 @@
 @import "tailwindcss";
 
 :root {
+  /* colors */
+  
+
   --green-cta:        #1A5319;
   --green-dark:       #092008;
   --green-light:      #DDEDDE;
@@ -12,19 +15,7 @@
   --brun:             #7A4E1D;
   --grey-src:         #505050;
 
-  --cloudy:           #F3F3F3;
-  --rainy:            #DFDFDF;
-  --rainstorm:  		  #CCCCCC;
-  --stormy:           #999999;
-  --tornado:         	#666666;
-  --hurricane:			  #434343;
-  --twilight:         #333333;
-  --dirtyWhite:       #f1f1f1;
-  --White70:          rgba(255,255,255,0.7);
-  --grayLite:         #e1e1e1;
-  --graySoft:         #aaa9a9;
-  --grayDark:         #363636;
-  --blackGray:        #2b2b2b;
+  
 
   /* linear-gradient */
   --gradient-top:     #84A178;
@@ -37,37 +28,41 @@
 }
 
 @theme inline {
-  --color-green-cta:        var(--green-cta);
-  --color-green-dark:       var(--green-dark);
-  --color-green-light:      var(--green-light);
-  --color-green-medium:     var(--green-medium);
-  --color-green-flashs:     var(--green-flashs);
-  --color-orange-flash:     var(--orange-flash);
-  --color-brun:             var(--brun);
-  --color-grey-src:         var(--grey-src);
 
-  --color-cloudy:           var(--cloudy);
-  --color-rainy:            var(--rainy);
-  --color-rainstorm:  		  var(--rainstorm);
-  --color-stormy:           var(--stormy);
-  --color-tornado:         	var(--tornado);
-  --color-hurricane:			  var(--hurricane);
-  --color-twilight:         var(--twilight);
-  --color-dirtyWhite:       var(--dirtyWhite);
-  --color-White70:          var(--White70);
-  --color-grayLite:         var(--grayLite);
-  --color-graySoft:         var(--graySoft);
-  --color-grayDark:         var(--grayDark);
-  --color-blackGray:        var(--blackGray);
+  --color-amber:        oklch(75% 0.18 95);
+  --color-terracotta:   oklch(58.17% 0.1779 20.78);
+  --color-plum:         oklch(43.80% 0.1599 337.83);
+  --color-charcoal:     oklch(25% 0.02 250);
+  --color-stone:        oklch(70% 0.02 250);
 
+  --color-cloudy:       oklch(96.42% 0 0);
+  --color-dirtyWhite:   oklch(95.81% 0 0);
+  --color-grayLite:     oklch(93.97% 0 0);
+  --color-rainy:        oklch(90.37% 0 0);
+  --color-rainstorm:    oklch(84.52% 0 0);
+  --color-stormy:       oklch(68.30% 0 0);
+  --color-tornado:      oklch(51.03% 0 0);
+  --color-hurricane:	  oklch(38.29% 0 0);
+  --color-twilight:     oklch(32.11% 0 0);
+  --color-White70:      oklch(100% 0 0 / 0.7);
+  --color-black30:      oklch(0% 0 0 / 0.3);
+      
+  --color-graySoft:     oklch(73.56% 0.0011 17.18);
+  --color-grayDark:     oklch(33.29% 0 0);
+  --color-grayBlack:    oklch(28.91% 0 0);
+
+  --color-cta:            var(--color-amber);
+  --color-title:          var(--color-terracotta);
+  --color-subTitle:       var(--color-plum);
+  --color-mainText:       var(--color-charcoal);
+  --color-secondaryText:  var(--color-stone);
   /* linear-gradient */
-  --color-gradient-top:     var(--gradient-top);
-  --color-gradient-middle:  var(--gradient-middle);
-  --color-gradient-bottom:  var(--gradient-bottom);
-  
+  --color-gradient-0:     var(--color-terracotta);
+  --color-gradient-100:   var(--color-plum);
+
   /* Google fonts */
-  --font-lato:              var(--lato);
-  --font-EB-Garamond:       var(--EB-Garamond);
+  --font-lato:        'Lato', sans-serif;
+  --font-EB-Garamond: 'EB Garamond', serif;
   
 }
 
@@ -88,25 +83,26 @@ html {
 }
 
 body {
-  @apply lato text-green-dark w-full h-full;
+  @apply lato text-mainText w-screen h-screen;
+  background: linear-gradient(90deg, var(--color-gradient-0) 0%, var(--color-gradient-100) 100%);
 }
 
 @layer base {
   p {
-    @apply text-green-dark;
+    @apply text-mainText;
   }
 
   a {
-    color: var(--color-green-cta);
+    @apply text-black30
   }
 
   h1 {
-    @apply eb-garamond  text-8xl leading-none text-green-cta;
+    @apply eb-garamond text-8xl leading-none text-cta;
   }
   h2 {
-    @apply eb-garamond text-5xl leading-none text-green-cta;
+    @apply eb-garamond text-5xl leading-none text-cta;
   }
   h3 {
-    @apply eb-garamond text-4xl leading-none text-green-cta;
+    @apply eb-garamond text-4xl leading-none text-cta;
   }
 }

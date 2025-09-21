@@ -6,10 +6,10 @@ const Navbarr = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-green-dark p-4 gap-4 flex">
-      <Link href="./" className={`text-green-light hover:text-gray-300 ${ pathname === '/' ? 'underline' : '' }`}>Home</Link>
-      <Link href="/services" className={`text-green-light hover:text-gray-300 ${ pathname === '/services' ? 'underline' : '' }`}>Services</Link>
-      <Link href="/contact" className={`text-green-light hover:text-gray-300 ${ pathname === '/contact' ? 'underline' : '' }`}>Contact</Link>   
+    <nav className="bg-plum p-4 gap-4 flex">
+      <Link href="./" className={`text-White70 hover:text-gray-300 ${ pathname === '/' ? 'underline' : '' }`}>Home</Link>
+      <Link href="/about" className={`text-White70 hover:text-gray-300 ${ pathname === '/about' ? 'underline' : '' }`}>About</Link>
+      <Link href="/contact" className={`text-White70 hover:text-gray-300 ${ pathname === '/contact' ? 'underline' : '' }`}>Contact</Link>   
     </nav>
   );
 };
