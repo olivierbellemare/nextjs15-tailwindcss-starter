@@ -97,12 +97,12 @@ body {
   }
 
   h1 {
-    @apply eb-garamond text-8xl leading-none text-cta;
+    @apply eb-garamond text-8xl leading-normal text-cta;
   }
   h2 {
-    @apply eb-garamond text-5xl leading-none text-cta;
+    @apply eb-garamond text-5xl leading-normal text-cta;
   }
   h3 {
-    @apply eb-garamond text-4xl leading-none text-cta;
+    @apply eb-garamond text-4xl leading-normal text-cta;
   }
 }
