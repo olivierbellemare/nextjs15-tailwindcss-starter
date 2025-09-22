@@ -58,7 +58,7 @@
   /* Semantic class */
   --color-cta:            var(--color-amber);
   --color-title:          var(--color-terracotta);
-  --color-subTitle:       var(--color-plum);
+  --color-subTitle:       var(--color-plum-dark);
   --color-mainText:       var(--color-charcoal);
   --color-secondaryText:  var(--color-stone);
   /* Linear-Gradient */
@@ -69,15 +69,6 @@
   --font-lato:        'Lato', sans-serif;
   --font-EB-Garamond: 'EB Garamond', serif;
   
-}
-
-@utility lato {
-  @apply font-lato font-[400] not-italic;
-}
-
-@utility eb-garamond {
-  @apply font-EB-Garamond font-[700] not-italic;
-  font-optical-sizing: auto;  
 }
 
 a img { border: 0; }
@@ -105,9 +96,18 @@ body {
     @apply eb-garamond text-8xl leading-normal text-cta;
   }
   h2 {
-    @apply eb-garamond text-5xl leading-normal text-cta;
+    @apply eb-garamond text-5xl leading-normal text-White70;
   }
   h3 {
-    @apply eb-garamond text-4xl leading-normal text-cta;
+    @apply eb-garamond text-3xl leading-normal text-subTitle;
   }
+}
+
+@utility lato {
+  @apply font-lato font-[400] not-italic;
+}
+
+@utility eb-garamond {
+  @apply font-EB-Garamond font-[700] not-italic;
+  font-optical-sizing: auto;  
 }
