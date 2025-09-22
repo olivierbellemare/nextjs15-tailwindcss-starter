@@ -29,10 +29,13 @@
 
 @theme inline {
 
+  /* Colors */
   --color-amber:        oklch(75% 0.18 95);
   --color-terracotta:   oklch(58.17% 0.1779 20.78);
   --color-plum:         oklch(43.80% 0.1599 337.83);
+  --color-plum-dark:    oklch(33.80% 0.1599 337.83);
   --color-charcoal:     oklch(25% 0.02 250);
+  --color-off-white:    oklch(98% 0 250);
   --color-stone:        oklch(70% 0.02 250);
 
   --color-cloudy:       oklch(96.42% 0 0);
@@ -44,6 +47,7 @@
   --color-tornado:      oklch(51.03% 0 0);
   --color-hurricane:	  oklch(38.29% 0 0);
   --color-twilight:     oklch(32.11% 0 0);
+  --color-White30:      oklch(100% 0 0 / 0.3);
   --color-White70:      oklch(100% 0 0 / 0.7);
   --color-black30:      oklch(0% 0 0 / 0.3);
       
@@ -51,12 +55,13 @@
   --color-grayDark:     oklch(33.29% 0 0);
   --color-grayBlack:    oklch(28.91% 0 0);
 
+  /* Semantic class */
   --color-cta:            var(--color-amber);
   --color-title:          var(--color-terracotta);
   --color-subTitle:       var(--color-plum);
   --color-mainText:       var(--color-charcoal);
   --color-secondaryText:  var(--color-stone);
-  /* linear-gradient */
+  /* Linear-Gradient */
   --color-gradient-0:     var(--color-terracotta);
   --color-gradient-100:   var(--color-plum);
 
