@@ -96,7 +96,7 @@ body {
     @apply eb-garamond text-8xl leading-normal text-cta;
   }
   h2 {
-    @apply eb-garamond text-5xl leading-normal text-White70;
+    @apply eb-garamond text-5xl leading-normal text-title;
   }
   h3 {
     @apply eb-garamond text-3xl leading-normal text-subTitle;

@@ -9,9 +9,9 @@ export default function Home() {
       <section className="container mx-auto text-center">
         <h1>Home page</h1>
         <NextLogo className="text-White70 w-1/4 inline-block my-10" />
-        <h2>What is Lorem Ipsum?</h2>
-        <h3>Lorem Ipsum is simply dummy text</h3>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <h2 className="mb-4"><span className="bg-White70 px-4 py-1 inline-block rounded-md">What is Lorem Ipsum?</span></h2>
+        <h3 className="mb-4"><span className="bg-White30 px-4 py-1 inline-block">Lorem Ipsum is simply dummy text</span></h3>
+        <p className="w-1/2 mx-auto">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         <Link href="/about" className="text-off-white underline">Go to About page</Link>
         <button className="bg-cta text-off-white px-4 py-2 rounded-md m-4 cursor-pointer">Button</button>
         <div className="grid grid-cols-2 gap-4">
