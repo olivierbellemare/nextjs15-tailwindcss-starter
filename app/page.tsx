@@ -1,7 +1,7 @@
 import NextLogo from "@components/NextLogo";
 import MyCard1 from "@components/MyCard1";
 import MyCard2 from "@components/Mycard2";
-import Link from "@node_modules/next/link";
+import Link from "next/link";
 
 export default function Home() {
   return (
